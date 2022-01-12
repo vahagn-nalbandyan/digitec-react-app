@@ -1,0 +1,87 @@
+.portfolio-item {
+    width: calc(100% / 3);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    &::after {
+        transition: background-color .3s ease-in-out;
+        content: '';
+        position: absolute;
+        background-color: rgba(0,0,0,0.1);
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }    
+    &:hover > .text-box {
+        top: calc(50% - (185px / 2));
+    }
+    img {
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+    .text-box {
+        position: absolute;
+        top: calc(50% - 16.5px);
+        z-index: 4;      
+        transition: all .3s ease-in-out;
+        .title {
+            text-shadow: 1px 1.5px 5px rgba(0, 0, 0, 0.3);
+            font-size: 29px;
+            font-family: $Heavy;
+            color: #fff;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+        }
+        .hidden {
+            max-width: 360px;
+            width: 100%;
+            margin: 0 auto;
+            opacity: 0;
+            transition: all .3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            .description {
+                padding: 15px 0px 24px;
+                color: #fff;
+                font-family: $Roman;
+                font-size: 16px;
+                line-height: 25px;
+                text-align: center;
+            }
+            button {
+                color: #000;
+                border-radius: 10px;
+                cursor: pointer;
+                background-color: #fff;
+                width: 160px;
+                height: 38px;
+                line-height: 38px;
+                border: none;
+                font-family: $Roman;
+                font-size: 16px;
+                margin: auto;
+                transition: background-color .3s ease-in-out;
+                &:hover {
+                    background-color: rgba(255,255,255,0.6);
+                }
+            }
+        }
+    }
+    &.hovered {
+        &::after {
+            background-color: rgba(0,0,0,0.6);
+        }
+        .text-box {            
+            
+            .hidden {
+                opacity: 1;
+            }
+        }
+        
+    }
+}

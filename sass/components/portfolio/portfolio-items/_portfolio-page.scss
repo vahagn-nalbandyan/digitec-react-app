@@ -1,0 +1,94 @@
+.body-portfolio-page {
+    .video-js {
+        opacity: 0;
+    }
+    .page-portfolio-item {
+        &-wrapper {
+            .content-box {
+                max-width: 1170px;
+                width: 96%;
+                margin: 0 auto;
+                padding-top: 135px;
+                font-family: $Roman;
+                font-size: 16px;
+                letter-spacing: .01em;
+                line-height: 25px;
+                color: $black;
+                display: flex;
+                justify-content: space-between;
+                span {
+                    font-weight: bolder;
+                }
+                .left-box {
+                    max-width: 750px;
+                    width: 90%;
+                    margin-right: 30px;
+                    h1 {
+                        font-family: $Black;
+                        font-size: 45px;
+                        margin-bottom: 50px;
+                    }
+                    &-upper {
+                        h2 {
+                            font-family: $Roman;
+                            font-size: 24px;
+                        }
+                        .unordered-list {
+                            &-item {
+                                margin-bottom: 5px;
+                                display: flex;
+                                align-items: center;
+                                &::before {
+                                    content: '';
+                                    display: block;
+                                    width: 6px;
+                                    height: 6px;
+                                    background-color: $black;
+                                    border-radius: 50%;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                }  
+                .right-box {
+                    padding-top: 70px;
+                    &-title {
+                        font-family: $Roman;
+                        font-weight: bold;
+                        width: 130px;
+                        line-height: 24px;
+                        margin-bottom: 17px;
+                    }
+                    a {
+                        display: block;
+                        text-align: center;
+                        border-radius: 10px;
+                        background-color: $black;
+                        color: $white;
+                        width: 200px;
+                        height: 40px;
+                        line-height: 40px;
+                        font-family: $Roman;
+                        font-size: 16px;
+                        letter-spacing: .02em;        
+                    }
+                }          
+            }
+            .img-box {
+                img {
+                    width: 100%;
+                    display: block;
+                    height: auto;
+                    margin-top: 100px;
+                }
+            }
+            .portfolio-container {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 80px;
+            }
+        }
+    }
+}
+

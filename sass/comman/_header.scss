@@ -1,0 +1,24 @@
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 35px 0;
+    margin: 0 auto;
+    width: calc(100vw - 84px);
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    .menu-opened {
+        path {
+            fill: $white;
+            transition: fill 0.3s ease-in-out;
+        }
+    }    
+    .menu-closed {
+        path {
+            fill: $black;
+            transition: fill 0.3s ease-in-out;
+        }    
+    }
+}

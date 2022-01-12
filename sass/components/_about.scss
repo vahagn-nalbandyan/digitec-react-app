@@ -1,0 +1,80 @@
+.page-about {
+    padding: 130px 0 18px;
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: rgba(225,225,225,0.75);
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+    }
+    &-wrapper {
+        max-width: 1170px;
+        width: 96%;
+        margin: 0 auto;
+        h1 {
+            font-family: $Black;
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+        p {
+            letter-spacing: .01em;
+        }
+        .article-container {
+            padding: 60px 0;
+            display: flex;
+            justify-content: space-between;
+            svg {
+                height: 17px;
+                width: auto;
+                margin-bottom: 11px;
+            }
+            p {
+                font-family: $Roman;
+                font-size: 16px;
+                line-height: 25px;
+                max-width: 750px;
+                width: 90%;
+            }
+        }
+        .team-container {
+            display: flex;
+            flex-direction: column;
+            .team-image-box {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 60px;
+                .item {
+                    width: 19%;
+                    text-align: center;
+                    cursor: pointer;
+                    .name {
+                        font-family: $Medium;
+                        font-size: 18px;
+                        margin-bottom: 5px;
+                    }
+                    .position {
+                        font-family: $Roman;
+                        font-size: 14px;
+                    }
+                    img {
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                        filter: grayscale(100%);                        
+                    }
+                    &.active > img {
+                        filter: grayscale(0); 
+                    }
+                }
+            }
+            .team-text-box {
+                font-family: $Roman;
+                line-height: 25px;                
+            }
+        }
+    }
+}
+

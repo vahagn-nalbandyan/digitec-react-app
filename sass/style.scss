@@ -1,0 +1,20 @@
+@import './comman/color-variable';
+@import './comman/fonts';
+@import './comman/font-variable';
+
+@import './comman/global';
+@import './comman/header';
+
+@import './components/app';
+@import './components/home';
+@import './components/about';
+@import './components/services';
+@import './components/partners';
+@import './components/portfolio/portfolio';
+@import './components/portfolio/portfolio-item';
+
+@import './components/portfolio/portfolio-items/portfolio-page';
+
+@import './components/bgvideo';
+@import './components/menu-button';
+@import './components/menu';

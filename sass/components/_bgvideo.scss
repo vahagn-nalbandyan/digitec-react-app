@@ -1,0 +1,9 @@
+.video-js {
+    position: absolute;
+    z-index: -1;
+    width: -webkit-fill-available;
+}
+
+video {
+    object-fit: cover;
+}

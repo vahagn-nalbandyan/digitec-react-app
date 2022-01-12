@@ -1,0 +1,31 @@
+.home-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .center-text-box {
+        font-family: $Black;
+        font-size: 100px;
+        letter-spacing: -.05em;
+        .Typewriter__cursor {
+            font-family: $Light;
+        }
+    }
+    .lower-box {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 30px;
+        .social-box {
+            width: 145px;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            margin-bottom: 23px;
+        }
+        .copyright-box {
+            font-family: $Medium;
+            font-size: 15px;
+        }
+    }
+}
